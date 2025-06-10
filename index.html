@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amor Eterno - Lanna Maia</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para ícones românticos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <h1><i class="fas fa-heart coracao"></i> Lanna Maia <i class="fas fa-heart coracao"></i></h1>
+            <p>A namorada mais linda do mundo</p>
+        </div>
+    </header>
+
+    <!-- Contador de Dias -->
+    <section class="contador">
+        <div class="container">
+            <h2><i class="fas fa-heartbeat me-2"></i>Nosso Amor em Números<i class="fas fa-heartbeat ms-2"></i></h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="contador-card">
+                        <div class="contador-numero" id="diasJuntos">0</div>
+                        <!-- <p id="tempoJuntos">dias de amor</p> -->
+                        
+                        <!-- Data fixa de início -->
+                        <div class="data-fixa mt-2">
+                            <p class="mb-0"><i class="fas fa-calendar-heart me-2"></i>Começamos em: <strong>12 de Junho de 2024</strong></p>
+                        </div>
+                        
+                        <!-- Barra de progresso para 1 ano -->
+                        <div class="mt-4">
+                            <h5 class="text-center mb-2">Progresso para nosso primeiro ano</h5>
+                            <div class="progress" style="height: 25px;">
+                                <div id="progresso-um-ano" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" 
+                                     role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <span id="porcentagem-um-ano">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Contagem regressiva para 1 ano -->
+                        <div id="contagem-regressiva" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trilha do Tempo -->
+    <section class="galeria timeline">
+        <div class="container">
+            <h2><i class="fas fa-history me-2"></i>Nossa História de Amor<i class="fas fa-history ms-2"></i></h2>
+            
+            <div class="timeline-container">
+                <!-- Momento 1 - Início -->
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date">Jun</span>
+                        <span class="year">2024</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="foto-container foto-1">
+                            <div class="foto-tag">Início</div>
+                            <img src="https://res.cloudinary.com/dgygieunq/image/upload/v1749525342/14a09111-f0ad-44c4-af39-e3c3247de098.png" alt="Nosso Primeiro Encontro">
+                        </div>
+                        <div class="timeline-text">
+                            <h4>Primeiro Encontro</h4>
+                            <p>Aquele dia em que tudo começou e nossas vidas mudaram para sempre.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Momento 2 - Primeiros Momentos -->
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date">Jun</span>
+                        <span class="year">2024</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="foto-container foto-2">
+                            <div class="foto-tag">Sorrisos</div>
+                            <img src="https://res.cloudinary.com/dgygieunq/image/upload/v1749525795/975d6965-85b7-43a6-8f86-4c41f041c056.png" alt="Primeiros Momentos">
+                        </div>
+                        <div class="timeline-text">
+                            <h4>Primeiros Momentos</h4>
+                            <p>Descobrindo um ao outro, construindo memórias que durarão para sempre.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Momento 3 - Primeiras Aventuras -->
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date">Dez</span>
+                        <span class="year">2024</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="foto-container foto-4">
+                            <div class="foto-tag">Natal</div>
+                            <img src="https://res.cloudinary.com/dgygieunq/image/upload/v1749473522/natal_cucfyr.jpg" alt="Momentos Especiais">
+                        </div>
+                        <div class="timeline-text">
+                            <h4>Primeiro Natal</h4>
+                            <p>Um momento mágico que ficará para sempre em nossos corações.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Momento 6 - Ano juntos -->
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date">Janeiro</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="foto-container foto-6">
+                            <div class="foto-tag">Futuro</div>
+                            <img src="https://res.cloudinary.com/dgygieunq/image/upload/v1749525906/fdc0ec0b-623d-4f1c-9169-1217b1f66e91.png" alt="Nosso Futuro">
+                        </div>
+                        <div class="timeline-text">
+                            <h4>Ano Juntos</h4>
+                            <p>O melhor ainda está por vir. Este é apenas o começo da nossa história.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Momento 4 - Momentos Especiais -->
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date">Maio</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="foto-container foto-3">
+                            <div class="foto-tag">Aventuras</div>
+                            <img src="https://res.cloudinary.com/dgygieunq/image/upload/v1749525452/c0bbe874-55f2-4df5-af5a-138549862996.png" alt="Nossas Aventuras">
+                        </div>
+                        <div class="timeline-text">
+                            <h4>Explorando Juntos</h4>
+                            <p>Cada aventura fortalecia nosso vínculo e criava memórias especiais.</p>
+                        </div>
+                    </div>
+                </div>
+                
+  
+                
+                <!-- Momento 5 - Amor Crescendo -->
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date">Maio</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="foto-container foto-5">
+                            <div class="foto-tag">Amor</div>
+                            <img src="https://res.cloudinary.com/dgygieunq/image/upload/v1749526326/c4a154bf-f2af-4e9b-878d-49256dc46574.png" alt="Nosso Amor Crescendo">
+                        </div>
+                        <div class="timeline-text">
+                            <h4>Amor Crescendo</h4>
+                            <p>Nossa conexão se fortalece a cada dia que passa.</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+    
+            </div>
+        </div>
+    </section>
+
+    <!-- Mensagem Romântica -->
+    <section class="mensagem">
+        <div class="container">
+            <h2>Para Minha Lanna</h2>
+            <p>Cada dia ao seu lado é uma nova página no livro da nossa história de amor. 
+               Seu sorriso ilumina meus dias, seu abraço aquece meu coração, e seu amor 
+               transforma minha vida. Obrigado por compartilhar comigo cada momento, 
+               cada risada, cada lágrima. Você é o presente mais precioso que a vida 
+               poderia me dar. Te amo infinitamente, meu amor</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>Feito com <i class="fas fa-heart coracao"></i> para a namorada mais linda do mundo</p>
+            <p>&copy; 2025 - Amor Eterno</p>
+        </div>
+    </footer>
+
+    <!-- Botão de Música -->
+    <button id="btnMusica" class="btn-musica">
+        <i class="fas fa-volume-mute"></i>
+    </button>
+
+    <!-- Bootstrap JS e Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
