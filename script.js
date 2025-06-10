@@ -48,7 +48,7 @@ function atualizarContador() {
         document.getElementById('contagem-regressiva').innerHTML = 
             `<div class="alert alert-danger mt-3 animate__animated animate__pulse animate__infinite">
                 <i class="fas fa-hourglass-half me-2"></i>
-                Faltam apenas <strong>${diasParaUmAno} ${diasParaUmAno === 1 ? 'dia' : 'dias'}</strong> para completarmos 1 ano juntos!
+                Faltam apenas <strong>${diasParaUmAno} ${diasParaUmAno === 1 ? 'dia' : 'dias'}</strong> para completarmos 1 ano juntos! <strong>Aguarde!!</strong>
             </div>`;
     } else {
         const anos = Math.floor(diff / 365);
